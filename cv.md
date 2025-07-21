@@ -12,9 +12,11 @@
 
 ## Skills:
 
-- **Languages:** HTML, CSS, JavaScript
+- **Languages:** HTML, CSS, JavaScript.
 - _Interacted_ with Kotlin, Python and C#.
-- **Tools:** Git, VS Code, Chrome DevTools
+- **Tools:** Git, VS Code, Chrome DevTools.
+
+* _Other_: self-paced learning, time management.
 
 ## Code example:
 
@@ -23,3 +25,13 @@ function multiply(a, b){
   return a * b
 }
 ```
+
+## Education:
+
+- Incomplete higher education
+- freeCodeCamp
+- RS School
+
+## English Level:
+
+- Intermediate (B1) (writing, reading and speaking)
