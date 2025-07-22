@@ -5,3 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.cv-photo {
+  border-radius: 50%;
+}
