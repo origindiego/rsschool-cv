@@ -1,3 +1,157 @@
-h1 {
-  color: salmon;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.header {
+  background-color: #f1f5f9;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e0e7ff;
+}
+
+.section-title.main-title {
+  text-align: center;
+  font-size: 36px;
+  color: #3b82f6;
+}
+
+.section-profile-subtitle {
+  color: #3b82f6;
+  position: relative;
+}
+
+.section-profile-subtitle::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0px;
+  width: 250.8px;
+  height: 10px;
+  background-color: #f1f5f9;
+}
+
+.section-title {
+  color: #3b82f6;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+  left: 0px;
+  width: 250.8px;
+  height: 4px;
+  background-color: lavender;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link,
+.resources-link {
+  padding: 0 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 2s 500ms;
+}
+
+.nav-link:hover,
+.resources-link:hover {
+  background-color: #dbeafe;
+}
+
+.resources-link {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px;
+}
+
+.cv-photo {
+  border-radius: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f5f9;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-list {
+  padding: 0;
+  margin: 15px;
+}
+
+.section {
+  width: 50%;
+  padding: 10px;
+  padding-bottom: 35px;
+}
+
+.section-profile {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+
+  .header {
+    display: none;
+  }
+  .section-profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
