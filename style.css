@@ -21,6 +21,37 @@ main,
 footer {
   border: 1px solid red;
 }
+.header {
+  background-color: papayawhip;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.section-title.main-title {
+  text-align: center;
+  font-size: 36px;
+  color: darkolivegreen;
+}
+
+.section-profile-subtitle {
+  color: darkolivegreen;
+  position: relative;
+}
+
+.section-profile-subtitle::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 0px;
+  width: 220px;
+  height: 10px;
+  background-color: antiquewhite;
+}
 
 .container {
   max-width: 1440px;
@@ -36,9 +67,21 @@ footer {
 
 .nav-link {
   padding: 0 20px;
-  line-height: 50px;
+  line-height: 36px;
+  text-decoration: none;
+  color: hsl(33, 5%, 32%);
+  font-size: 24px;
+  font-weight: bold;
+  transition: background-color 2s 500ms;
+}
+
+.nav-link:hover {
+  background-color: darkorange;
 }
 
 .cv-photo {
   border-radius: 50%;
+}
+
+.contacts {
 }

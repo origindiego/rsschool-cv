@@ -6,6 +6,7 @@
     <title>cv</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="cvicon.ico" />
+    <!--Не выводит фавиконку почему-то-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -42,17 +43,32 @@
             </li>
           </ul>
         </nav>
-        <img
-          class="cv-photo"
-          src="cv photo.jpeg"
-          alt="my cv photo"
-          width="350"
-        />
       </div>
     </header>
     <main class="main">
-      <div class="container">
-        <section class="section" id="contacts"></section>
+      <div class="container main-container">
+        <section class="profile" id="profile">
+          <img
+            class="cv-photo"
+            id="cv-photo"
+            src="cv photo.jpeg"
+            alt="my cv photo"
+            width="350"
+          />
+          <div class="section-profile-title">
+            <h1 id="name" class="section-title main-title">Nick Cartov</h1>
+            <h3 class="section-profile-subtitle">Junior Frontend Developer</h3>
+          </div>
+        </section>
+        <section class="section" id="contacts">
+          <ul class="contacts">
+            <li>telegram: @cocacartov</li>
+            <li>discord: CocaCartov(@origindiego)</li>
+            <li>
+              github: <a href="https://github.com/origindiego">origindiego</a>
+            </li>
+          </ul>
+        </section>
         <section class="section" id="summary"></section>
         <section class="section" id="skills"></section>
         <section class="section" id="code"></section>
@@ -62,6 +78,8 @@
         <section class="section" id="english"></section>
       </div>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer">
+      <div class="container footer-container"></div>
+    </footer>
   </body>
 </html>
