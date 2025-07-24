@@ -16,32 +16,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f9fafb;
+  color: #1f2937;
 }
 
-header,
-main,
-footer {
-  border: 1px solid red;
-}
 .header {
-  background-color: papayawhip;
+  background-color: #f1f5f9;
 }
 
 .section-profile {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: #e0e7ff;
 }
 
 .section-title.main-title {
   text-align: center;
   font-size: 36px;
-  color: darkolivegreen;
+  color: #3b82f6;
 }
 
 .section-profile-subtitle {
-  color: darkolivegreen;
+  color: #3b82f6;
   position: relative;
 }
 
@@ -52,7 +49,21 @@ footer {
   left: 0px;
   width: 250.8px;
   height: 10px;
-  background-color: antiquewhite;
+  background-color: #f1f5f9;
+}
+
+.section-title {
+  color: #3b82f6;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+  left: 0px;
+  width: 250.8px;
+  height: 4px;
+  background-color: lavender;
 }
 
 .container {
@@ -67,19 +78,27 @@ footer {
   list-style: none;
 }
 
-.nav-link {
+.nav-link,
+.resources-link {
   padding: 0 20px;
   line-height: 36px;
   text-decoration: none;
-  color: hsl(33, 5%, 32%);
+  color: #2563eb;
   font-size: 24px;
   font-weight: bold;
   border-radius: 10px;
   transition: background-color 2s 500ms;
 }
 
-.nav-link:hover {
-  background-color: darkorange;
+.nav-link:hover,
+.resources-link:hover {
+  background-color: #dbeafe;
+}
+
+.resources-link {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px;
 }
 
 .cv-photo {
@@ -99,8 +118,40 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: papayawhip;
+  background-color: #f1f5f9;
 }
 
 .main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-list {
+  padding: 0;
+  margin: 15px;
+}
+
+.section {
+  width: 50%;
+  padding: 10px;
+  padding-bottom: 35px;
+}
+
+.section-profile {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+
+  .header {
+    display: none;
+  }
+  .section-profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

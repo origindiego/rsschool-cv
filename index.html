@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -51,10 +50,10 @@
           <img
             class="cv-photo"
             id="cv-photo"
-            src="cv photo.jpeg"
+            src="cv-photo.jpeg"
             alt="my cv photo"
-            width="350"
-          />
+            width="350" />
+          <br />
           <div class="section-profile-title">
             <h1 id="name" class="section-title main-title">Nick Cartov</h1>
             <h3 class="section-profile-subtitle">Junior Frontend Developer</h3>
@@ -69,12 +68,19 @@
             </li>
             <li class="section-item contacts-item">
               Email:
-              <a href="mailto:origindiegoua@gmail.com"
-                >origindiegoua@gmail.com</a
+              <a
+                href="mailto:origindiegoua@gmail.com"
+                class="email resources-link"
+                >origindiego@gmail.com</a
               >
             </li>
             <li class="section-item contacts-item">
-              github: <a href="https://github.com/origindiego">origindiego</a>
+              github:
+              <a
+                href="https://github.com/origindiego"
+                class="github resources-link"
+                >origindiego</a
+              >
             </li>
           </ul>
         </section>
@@ -111,10 +117,12 @@
         </section>
         <section class="section" id="code">
           <h2 class="section-title">Code Example</h2>
-          <pre>
-            function multiply(a, b) {
-              return a * b
-            }
+          <pre class="pre">
+            <code>
+function multiply(a, b) {
+  return a * b
+}
+            </code>
           </pre>
         </section>
         <section class="section" id="courses">
@@ -143,16 +151,16 @@
         <div>
           <a
             href="https://github.com/origindiego"
-            class="github nav-link"
+            class="github resources-link"
             target="_blank"
             >github: origindiego</a
           >
         </div>
         <a
           href="https://rs.school/courses/javascript-ru"
-          class="rsschool nav-link"
+          class="rsschool resources-link"
           target="_blank"
-          ><img src="rs-school-logo.svg" alt="rsschool logo" width="150px"
+          ><img src="rs-school-logo.svg" alt="rsschool logo" width="150"
         /></a>
       </div>
     </footer>
